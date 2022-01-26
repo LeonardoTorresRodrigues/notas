@@ -19,6 +19,7 @@ import BotaoDeleta from './componentes/deletaTarefa.js'
         tarefa.appendChild(BotaoDeleta())
         lista.appendChild(tarefa)
         input.value = " "
+        input.focus();
     } 
 
     const novaTarefa = document.querySelector('[data-form-button]');

@@ -13,16 +13,23 @@ body {
 }
   
 .todo-list {
-    background-color: chocolate;
+    background-color: rgb(219, 169, 60);
     font-family: 'Marck Script', cursive;
     padding: 1rem;
     min-width: 400px;
     min-height: 300px;
     border: black solid 0.25rem;
     border-radius: 1rem;
+
+    background-image: -moz-linear-gradient(top , transparent, transparent 49px,#E7EFF8 0px), -moz-radial-gradient(4% 50%, circle closest-corner, burlywood, burlywood 39%, transparent 0%), -moz-radial-gradient(3.9% 46% , circle closest-corner, #CCCCCC, #CCCCCC 43.5%, transparent 0%); 
+    background-image: -webkit-linear-gradient(top , transparent, transparent 49px,#E7EFF8 0), -webkit-radial-gradient(4% 50%, circle closest-corner, burlywood, burlywood 39%, transparent 0%), -webkit-radial-gradient(3.9% 46%, circle closest-corner, #cccccc, #cccccc 43.5%, transparent 0%);
+    
+    -webkit-background-size:  100% 50px;
+    background-size: 100% 50px;
 }
 
 .title {
+    padding-bottom: 0.68rem;
     font-size: 4rem;
 }
 
@@ -33,7 +40,7 @@ body {
 
 .form-input,
 .form-button {
-    border-radius: 0;
+    border-radius: 0.25rem;
     padding: 0.75rem;
     font-size: 0.75rem;
 }
@@ -55,8 +62,8 @@ body {
 }
 
 .form-button:hover {
-    color: #fddb00;
-    background: rgba(201, 175, 10, 0.63);
+    color: #F6F1D1;
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .list {
@@ -66,12 +73,10 @@ body {
 }
   
 .task {
-    background-color: rgba(255, 255, 255, 0.1);
     color: #F6F1D1;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0.5rem;
-    padding: 1rem 3rem;
+    padding: 0rem 2rem 1.7rem;
 }
   
 .check-button, .delete-button {
@@ -80,13 +85,18 @@ body {
     border: none;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     outline: none;
-    border-radius: 2px;
+    border-radius: 1.5rem;
     cursor: pointer;
 }
 
 .delete-button:hover {
-    color: #fddb00;
-    background: rgba(201, 175, 10, 0.63);
+    color: #F6F1D1;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.check-button:hover {
+    color: #F6F1D1;
+    background: rgba(0, 0, 0, 0.1);
 }
   
 .task.done .check-button {
@@ -109,6 +119,7 @@ body {
   
 .content {
     margin: 0;
+    color: rgb(26, 23, 23);
 }
   
 .task.done .content {
