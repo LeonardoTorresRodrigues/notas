@@ -12,9 +12,9 @@ body {
     min-height: 100vh;
 }
   
-  .todo-list {
+.todo-list {
     background-color: chocolate;
-    font-family: "Space Mono", monospace;
+    font-family: 'Marck Script', cursive;
     padding: 1rem;
     min-width: 400px;
     min-height: 300px;
@@ -23,7 +23,6 @@ body {
 }
 
 .title {
-    font-family: 'Courier New', Courier, monospace;
     font-size: 4rem;
 }
 
@@ -40,12 +39,14 @@ body {
 }
 
 .form-input {
+    font-family: 'Marck Script', cursive;
     outline: none;
     background-color: #F6F1D1;
     border-color: rgba(255, 255, 255, 0.1);
 }
 
 .form-button {
+    font-family: 'Marck Script', cursive;
     border: 1px;
     background: #F6F1D1;
     text-transform: uppercase;
@@ -74,6 +75,7 @@ body {
 }
   
 .check-button, .delete-button {
+    font-family: 'Marck Script', cursive;
     background-color: #F6F1D1;
     border: none;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
@@ -81,8 +83,34 @@ body {
     border-radius: 2px;
     cursor: pointer;
 }
+
+.delete-button:hover {
+    color: #fddb00;
+    background: rgba(201, 175, 10, 0.63);
+}
   
 .task.done .check-button {
     background-color: #46494C;
     color: #F6F1D1;
+}
+
+.check-icon {
+    display: block;
+    padding: 1px;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.task.done .check-icon {
+    background-color: #0B2027;
+}
+  
+.content {
+    margin: 0;
+}
+  
+.task.done .content {
+    text-decoration: line-through;
 }
